@@ -1,6 +1,6 @@
 const path = require('path');
 module.exports = {
-    entry: './src/js/router.js',
+    entry: './src/js/root.js',
     output: {
         path: path.resolve(__dirname),
         filename: 'bundle.js'
