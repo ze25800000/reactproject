@@ -22,3 +22,11 @@ html {
     color: #2db7f5;
 }
 
+#mobileheader i {
+    font-size: .5rem;
+    float: right;
+    margin-right: .3rem;
+    margin-top: .6em;
+    color: #2db7f5;
+}
+
