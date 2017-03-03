@@ -3,6 +3,7 @@ import {Row, Col, Carousel, BackTop} from 'antd';
 import PCNewsImageBlock from './pc_news_image_block';
 import PCHeader from './pc_header';
 import PCFooter from './pc_footer';
+import CommonComments from './common_comments';
 export default class PCNewsDetail extends React.Component {
     constructor() {
         super();
@@ -21,7 +22,6 @@ export default class PCNewsDetail extends React.Component {
             myFetchOptions)
             .then(response => response.json())
             .then(json => {
-                console.log(json);
                 this.setState({newsItem: json});
                 document.title = this.state.newsItem.title + '- React News';
             });
@@ -41,9 +41,10 @@ export default class PCNewsDetail extends React.Component {
                     <Col span={2}></Col>
                     <Col span={14} className="container">
                         <div dangerouslySetInnerHTML={this.createMarkup()} className="articleContainer"></div>
+                        <CommonComments uniquekey={this.props.params.uniquekey}/>
                     </Col>
                     <Col span={6}>
-                        <PCNewsImageBlock count={40} type="top" width="400px" imageWidth="160" cardTitle="相关新闻"/>
+                        <PCNewsImageBlock count={40} type="top" width="400px" imageWidth="160px" cardTitle="相关新闻"/>
                     </Col>
                     <Col span={2}></Col>
                 </Row>
