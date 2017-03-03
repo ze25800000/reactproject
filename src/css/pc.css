@@ -42,7 +42,7 @@
     float: left;
     text-align: left;
     font-size: 14px;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .topNewsList a {
@@ -65,4 +65,24 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+
+.imageblock {
+    float: left;
+    padding-left: 4px;
+}
+
+.topNewsList {
+    float: left;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.bottom-list .topNewsList {
+    width: 100%;
+}
+
+.bottom-list .topNewsList .imageblock {
+    padding-left: 15px;
 }

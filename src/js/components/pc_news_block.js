@@ -25,7 +25,6 @@ export default class PCNewsBlock extends React.Component {
 
     render() {
         const {news}=this.state;
-        console.log(news.length)
         const newsList = news.length
             ?
             news.map((newsItem, index) => (
